@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: "Roboto", sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+}
+.footer__paging{
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 3px;
+        display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+
+.footer__paging button{
+    height: 32px;
+    width: 32px;
+    border: 1px solid #707070;
+    border-radius: 3px;
+}
+
+.active{
+    background: #FFF2B3;
+    color: #000;
+    border: #FFF2B3;
+    font-weight: 600;
+}
+.button__list{
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}

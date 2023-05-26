@@ -1,0 +1,49 @@
+.Pagination{
+    display: flex;
+    align-items: center;
+  
+}
+.flex__btn{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.flex__btn button{
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #D8D7D7;
+    border-radius: 3px;
+}
+
+.chose_row_show input{
+    height: 24px !important;
+    width: 53px !important;
+    padding: 4px !important
+}
+
+.icon__drop{
+    position: absolute;
+    top: 2px !important;
+    right: 5px;
+}
+
+.active {
+    background: #138300 !important;
+    border:1px solid #138300 !important;
+    color: #fff
+}
+
+.chose_row_show{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.show{
+    top: -395px !important;
+}

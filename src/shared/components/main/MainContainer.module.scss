@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: "Roboto", sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 60px;
+    
+}
+
+.main__card{
+    display: flex;
+    column-gap: 10px;
+    width: 75%;
+}
+
+.main__fill{
+    display: flex;
+    column-gap: 10px;
+    width: 25%;
+    justify-content: end;
+}
+
+.main__input{
+    position: relative;
+    width: 33.3%;
+}
+
+.main__input #focus{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.main__input-first,
+.main__input-second{
+    height: 32px;
+    border: 1.5px solid #ACACAC;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.main__input-first{
+    padding-left: 30px;
+}
+
+.main__input-second{
+    color: #E3E3E3;
+}
+
+.main__input-first:focus{
+    outline: none;
+}
+
+.main__input-first::placeholder{
+    color: #E3E3E3;
+}
+
+.main__fill button{
+    height: 32px;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #707070;
+}
+
+@media only screen and (max-width: 1366px) {
+    .main__card{
+        width: 65%;
+    }
+    
+    .main__fill{
+        width: 35%;
+    }
+}

@@ -1,0 +1,33 @@
+.selectbox{
+    position: relative;
+    img{
+        position: absolute;
+        right: 5px;
+        top: 11px;
+    }
+}
+
+.hide{
+    display: none;
+}
+
+.selectbox_list{
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    .selectbox_item{
+        cursor: pointer;
+        padding: 10px;
+        &:hover{
+            background: #F6F6F6;
+        }
+    }
+    
+}
+
+.selectbox_item{
+    font-size: 14px;
+}

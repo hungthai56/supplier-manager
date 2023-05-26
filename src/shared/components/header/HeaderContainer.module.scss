@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: "Roboto", sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+span, h1,h2,h3,h4,h5,h6,p, li, a{
+    margin: 0;
+    font-size: 14px;
+}
+button{
+    cursor: pointer;
+}
+
+:root {
+    --background-left: #FFCD29;
+    --background-active: #FFF2B3;
+}
+
+.right{
+    background: #fff;
+    background: #fff;
+    position: fixed;
+    right: 0;
+    width: 88%;
+    z-index: 999999;
+}
+
+.header__left{
+    width: 100%;
+    position: relative;
+}
+
+.header__right{
+    width: 30%;
+}
+
+
+.header__left-button{
+    background: none;
+    border: none;
+    padding: 0;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 7px 20px;
+    
+}
+
+.header__left-flex{display: flex;}
+
+.header__tag{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.header__icon{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    justify-content: end;
+}
+
+.line{
+    display: block;
+    width: 1.5px;
+    background: #707070;
+    height: 20px;
+}
+
+.header__modal{
+    position: absolute;
+    top: 45px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+
+.header__modal a{
+    text-decoration: none;
+    padding: 10px 25px 10px 10px;
+    display: block;
+    background: #F6F6F6;
+    border-radius: 3px;
+    color: #333333;
+}
+
+#active{
+    display: block !important;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 1366px) {
+    .right{
+        width: 83%;
+    }
+}

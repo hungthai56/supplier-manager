@@ -1,0 +1,132 @@
+#dropdown {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.inputs_item {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.stand_input{
+    cursor: pointer;
+    width: 100%;
+}
+
+.is_change, .icon_float{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.is_change img{
+    transform: rotate(180deg);
+}
+
+.input_item {
+    height: 32px;
+    border: 1.5px solid #ACACAC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+}
+
+.input_item:focus{
+    outline: none;
+}
+
+.dropdown_body {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08), 0px 2px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.show{
+    top: 35px;
+    position: absolute;
+    background: #fff;
+    z-index: 99999;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08), 0px 2px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.show ul{
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+.show ul li{
+    padding: 10px;
+}
+
+.show ul li:hover{
+    background: #F6F6F6;
+}
+
+
+.dropdown_body ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.dropdown_body ul li {
+    list-style-type: none;
+    display: flex;
+    padding: 12px 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+.dropdown_body ul li:hover {
+    background-color: #F7F7F7;
+}
+.dropdown_body.show {
+    display: flex;
+}
+
+
+.check__value{
+    position: absolute;
+    z-index: 99999;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+    top: 29px;
+    width: 108px;
+    left: -4px;
+    border-radius: 3px;
+}
+
+.check__value ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.check__value ul li{
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+.check__value ul li:hover{
+    background-color: #F7F7F7;
+}
+
+
+.check__change>.check__value{
+    display: block !important;
+}
